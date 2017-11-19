@@ -13,8 +13,8 @@ func TestShorturl(t *testing.T) {
 	}
 
 	domain := "http://shorturl.cn"
-	keyword := Generator(CHARSET_ALPHANUMERIC, domain, url, cb)
-	if keyword == "" {
+	surl := Generator(CHARSET_ALPHANUMERIC, domain, url, cb)
+	if surl == "" {
 		t.Fatalf("Failed: generator shorturl, url[%s]", url)
 	}
 }
