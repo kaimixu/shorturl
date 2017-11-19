@@ -11,7 +11,7 @@
 
 	import (
 		"fmt"			
-		"github.com/kaimixu/shortUrl"
+		"github.com/kaimixu/shorturl"
 	)
 
 	func main() {
@@ -23,6 +23,6 @@
 		}
 
 		domain := "http://shorturl.cn"
-		keyword := Generator(CHARSET_ALPHANUMERIC, domain, url, cb)
+		keyword := shorturl.Generator(shorturl.CHARSET_ALPHANUMERIC, domain, url, cb)
 		fmt.Println(keyword)
 	}
