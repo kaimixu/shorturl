@@ -23,6 +23,6 @@
 		}
 
 		domain := "http://shorturl.cn"
-		keyword := shorturl.Generator(shorturl.CHARSET_ALPHANUMERIC, domain, url, cb)
-		fmt.Println(keyword)
+		surl := shorturl.Generator(shorturl.CHARSET_ALPHANUMERIC, domain, url, cb)
+		fmt.Println(surl)
 	}
